@@ -40,8 +40,8 @@ object ActorsTestFramework extends TestFramework {
     }
   }
 
-  override def runTests(testOutput: TestOutput, args: js.Array[String])(
-    tests: js.Function0[Unit]): Unit = {
+  override def runTest(testOutput: TestOutput, args: js.Array[String])(
+    tests: js.Function0[Test]): Unit = {
     withEventQueue {
       try {
         tests()
