@@ -3,7 +3,7 @@ import ScalaJSKeys._
 val commonSettings = Seq(
     organization := "org.scalajs",
     version := "0.1-SNAPSHOT",
-    scalaVersion := "2.10.3",
+    scalaVersion := "2.11.4",
     normalizedName ~= { _.replace("scala-js", "scalajs") },
     scalacOptions ++= Seq(
         "-deprecation",
